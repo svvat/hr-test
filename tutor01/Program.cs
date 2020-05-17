@@ -27,8 +27,14 @@ namespace tutor01
 
             string comparrisonMessage = "";
 
-            comparrisonMessage = currentProduct.PadRight(20);
-            comparrisonMessage += $"{currentReturn:P2}";
+            comparrisonMessage = currentProduct.PadRight(20) + "|";
+            comparrisonMessage += $"{currentReturn:P2}".PadLeft(10) + "|";
+            comparrisonMessage += $"{currentProfit:C}".PadLeft(20);
+
+            comparrisonMessage += "\n";
+            comparrisonMessage += newProduct.PadRight(20) + "|";
+            comparrisonMessage += String.Format("{0:P}", newReturn).PadLeft(10) + "|";
+            comparrisonMessage += String.Format("{0:C}", newProfit).PadLeft(20);
 
             Console.WriteLine(comparrisonMessage);
 
