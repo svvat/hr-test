@@ -1,9 +1,10 @@
 ﻿using System;
 
-namespace tutor01
+namespace FormatStrings
 {
     class Program
     {
+        // simple program to format a letter .
         static void Main(string[] args)
         {
             string customerName = "Mr. Jones";
